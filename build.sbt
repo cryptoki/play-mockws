@@ -8,7 +8,7 @@ scalacOptions ++= Seq("-deprecation", "-feature")
 
 organization := "de.leanovate.play-mockws"
 
-val playVersion = "2.5.0"
+val playVersion = "2.5.6"
 
 fork := true
 
@@ -21,8 +21,8 @@ libraryDependencies ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "2.2.6",
-  "org.scalacheck" %% "scalacheck" % "1.12.5",
+  "org.scalatest" %% "scalatest" % "3.0.0",
+  "org.scalacheck" %% "scalacheck" % "1.13.2",
   "org.mockito" % "mockito-core" % "1.10.19"
 ) map (_ % "test")
 
